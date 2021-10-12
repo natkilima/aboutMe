@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      :root {
+        --primary-color: #6c63ff;
+        --secondary-color: #f5f2fe;
+        --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      }
       h1 {
         font-size: 96px;
       }
@@ -39,6 +44,24 @@
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         font-weight: bold;
+      }
+
+      .navigation-links a {
+        margin: 20px;
+        border-radius: 4px;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+
+      .contact-link {
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
+      }
+
+      a:-webkit-any-link {
+        cursor: pointer;
       }
     </style>
   </head>
